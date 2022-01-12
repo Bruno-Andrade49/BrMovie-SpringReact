@@ -1,0 +1,26 @@
+package com.brproj.bootcamp.projetospringreact.projetoSpringReact.Controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.dto.MovieDto;
+
+@RestController
+@RequestMapping(value = "/movies")
+public class MovieControle {
+
+	@Autowired
+	private MovieControle movieControle;
+
+	
+	@GetMapping
+	public Page<MovieDto> findAll(Pageable pageable) {
+		return movieControle.findAll(pageable);
+
+	}
+
+}

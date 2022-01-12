@@ -1,0 +1,8 @@
+package com.brproj.bootcamp.projetospringreact.projetoSpringReact.Controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MovieControle {
+
+}

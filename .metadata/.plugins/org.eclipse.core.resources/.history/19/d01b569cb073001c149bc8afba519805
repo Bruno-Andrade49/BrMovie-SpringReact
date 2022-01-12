@@ -1,0 +1,22 @@
+package com.brproj.bootcamp.projetospringreact.projetoSpringReact.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.MovieRepository;
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.dto.MovieDto;
+
+@Service
+public class MovieService {
+	
+	
+	@Autowired
+	private MovieRepository repository;
+	
+	public List<MovieDto> findAll() {
+		
+	}
+
+}

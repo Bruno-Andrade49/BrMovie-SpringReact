@@ -1,0 +1,5 @@
+package com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository;
+
+public interface MovieRepository {
+
+}

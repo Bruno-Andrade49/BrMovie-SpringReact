@@ -1,0 +1,27 @@
+package com.brproj.bootcamp.projetospringreact.projetoSpringReact.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.MovieRepository;
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.dto.MovieDto;
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.entities.Movie;
+
+@Service
+public class MovieService {
+	
+	
+	@Autowired
+	private MovieRepository repository;
+	
+	public Page<MovieDto> findAll(Pageable pageable) {
+		
+		Page<Movie> lista = repository.findAll(pageable);
+		Page<MovieDto> page = result.map(x -> new MovieDto(x));
+	}
+
+}
