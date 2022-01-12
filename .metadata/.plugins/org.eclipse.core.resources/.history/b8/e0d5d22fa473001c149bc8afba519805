@@ -1,0 +1,5 @@
+package com.brproj.bootcamp.projetospringreact.projetoSpringReact.entities;
+
+public class Score {
+
+}

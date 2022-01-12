@@ -1,0 +1,28 @@
+package com.brproj.bootcamp.projetospringreact.projetoSpringReact.entities;
+
+public class ScorePk {
+
+	private Movie idMovie;
+	private User idUser;
+
+	public ScorePk() {
+
+	}
+
+	public Movie getIdMovie() {
+		return idMovie;
+	}
+
+	public void setIdMovie(Movie idMovie) {
+		this.idMovie = idMovie;
+	}
+
+	public User getIdUser() {
+		return idUser;
+	}
+
+	public void setIdUser(User idUser) {
+		this.idUser = idUser;
+	}
+
+}

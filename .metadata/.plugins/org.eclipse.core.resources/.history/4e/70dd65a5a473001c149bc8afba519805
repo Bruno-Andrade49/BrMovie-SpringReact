@@ -1,0 +1,9 @@
+package com.brproj.bootcamp.projetospringreact.projetoSpringReact.entities;
+
+public class Score {
+	
+	private Movie idMovie;
+	private User idUser;
+	private Double value;
+
+}

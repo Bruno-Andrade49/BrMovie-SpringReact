@@ -1,0 +1,9 @@
+package com.brproj.bootcamp.projetospringreact.projetoSpringReact.entities;
+
+public class Score {
+	
+	private ScorePk idScore = new ScorePk();
+	
+	private Double value;
+
+}
