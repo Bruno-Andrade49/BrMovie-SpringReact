@@ -1,0 +1,20 @@
+package com.brproj.bootcamp.projetospringreact.projetoSpringReact.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.MovieRepository;
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.ScoreRepository;
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.UserRepository;
+
+public class ScoreService {
+	
+	@Autowired
+	private MovieRepository movieRepository;
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	@Autowired
+	private ScoreRepository scoreRepository;
+
+}

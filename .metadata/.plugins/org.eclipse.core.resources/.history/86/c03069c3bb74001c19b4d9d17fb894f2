@@ -1,0 +1,12 @@
+package com.brproj.bootcamp.projetospringreact.projetoSpringReact.services;
+
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.MovieRepository;
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.UserRepository;
+
+public class ScoreService {
+	
+	private MovieRepository movieRepository;
+	
+	private UserRepository userRepository;
+
+}

@@ -1,0 +1,29 @@
+package com.brproj.bootcamp.projetospringreact.projetoSpringReact.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.MovieRepository;
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.ScoreRepository;
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.UserRepository;
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.dto.ScoreDTO;
+
+public class ScoreService {
+	
+	@Autowired
+	private MovieRepository movieRepository;
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	@Autowired
+	private ScoreRepository scoreRepository;
+
+	@Transactional
+	public void saveScore(ScoreDTO dto) {
+		
+		User usuario = userRepository.findByEmail(dto.getE)
+		
+	}
+	
+}

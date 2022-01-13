@@ -1,0 +1,22 @@
+package com.brproj.bootcamp.projetospringreact.projetoSpringReact.dto;
+
+public class ScoreDTO {
+	
+	private Long movieId;
+	private String email;
+	private Double score;
+	
+	public ScoreDTO() {
+		
+	}
+
+	public ScoreDTO(Long movieId, String email, Double score) {
+		super();
+		this.movieId = movieId;
+		this.email = email;
+		this.score = score;
+	}
+	
+	
+
+}
