@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.MovieRepository;
-import com.brproj.bootcamp.projetospringreact.projetoSpringReact.dto.MovieDTO;
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.dto.MovieDto;
 import com.brproj.bootcamp.projetospringreact.projetoSpringReact.entities.Movie;
 
 @Service
@@ -17,18 +17,18 @@ public class MovieService {
 	private MovieRepository repository;
 
 	@Transactional(readOnly = true)
-	public Page<MovieDTO> findAll(Pageable pageable) {
+	public Page<MovieDto> findAll(Pageable pageable) {
 
 		Page<Movie> lista = repository.findAll(pageable);
-		Page<MovieDTO> page = lista.map(x -> new MovieDTO(x));
+		Page<MovieDto> page = lista.map(x -> new MovieDto(x));
 		return page;
 	}
 	
 	@Transactional(readOnly = true)
-	public MovieDTO findById(Long id) {
+	public MovieDto findById(Long id) {
 
 		Movie result = repository.findById(id).get();
-		MovieDTO dto = new MovieDTO(result);
+		MovieDto dto = new MovieDto(result);
 		return dto;
 		
 	}

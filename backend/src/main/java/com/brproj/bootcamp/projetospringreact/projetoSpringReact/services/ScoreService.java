@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.MovieRepository;
 import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.ScoreRepository;
 import com.brproj.bootcamp.projetospringreact.projetoSpringReact.Repository.UserRepository;
-import com.brproj.bootcamp.projetospringreact.projetoSpringReact.dto.MovieDTO;
+import com.brproj.bootcamp.projetospringreact.projetoSpringReact.dto.MovieDto;
 import com.brproj.bootcamp.projetospringreact.projetoSpringReact.dto.ScoreDTO;
 import com.brproj.bootcamp.projetospringreact.projetoSpringReact.entities.Movie;
 import com.brproj.bootcamp.projetospringreact.projetoSpringReact.entities.Score;
@@ -26,7 +26,7 @@ public class ScoreService {
 	private ScoreRepository scoreRepository;
 
 	@Transactional
-	public MovieDTO saveScore(ScoreDTO dto) {
+	public MovieDto saveScore(ScoreDTO dto) {
 		
 		User usuario = userRepository.findByEmail(dto.getEmail());
 		
@@ -56,7 +56,7 @@ public class ScoreService {
 		
 		filme = movieRepository.save(filme);
 		
-		return new MovieDTO(filme);
+		return new MovieDto(filme);
 		
 		
 	}

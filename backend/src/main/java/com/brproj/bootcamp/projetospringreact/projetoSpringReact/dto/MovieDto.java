@@ -3,7 +3,7 @@ package com.brproj.bootcamp.projetospringreact.projetoSpringReact.dto;
 
 import com.brproj.bootcamp.projetospringreact.projetoSpringReact.entities.Movie;
 
-public class MovieDTO {
+public class MovieDto {
 
 	private Long id;
 	private String title;
@@ -11,11 +11,11 @@ public class MovieDTO {
 	private Integer count;
 	private String image;
 
-	public MovieDTO() {
+	public MovieDto() {
 
 	}
 
-	public MovieDTO(Long id, String title, Double score, Integer count, String image) {
+	public MovieDto(Long id, String title, Double score, Integer count, String image) {
 		this.id = id;
 		this.title = title;
 		this.score = score;
@@ -23,7 +23,7 @@ public class MovieDTO {
 		this.image = image;
 	}
 
-	public MovieDTO(Movie movie) {
+	public MovieDto(Movie movie) {
 		this.id = movie.getId();
 		this.title = movie.getTitle();
 		this.score = movie.getScore();
