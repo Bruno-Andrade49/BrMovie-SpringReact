@@ -1,3 +1,4 @@
+
 package com.brproj.bootcamp.projetospringreact.projetoSpringReact.dto;
 
 import com.brproj.bootcamp.projetospringreact.projetoSpringReact.entities.Movie;
