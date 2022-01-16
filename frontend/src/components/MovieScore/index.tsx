@@ -3,16 +3,20 @@ import MovieStars from "components/movieStars";
 //import {ReactComponent as count} from "assets/img/13avaliações.svg";
 import "./style.css";
 
-function MovieScore() {
+type Props = {
+    score : number;
+    count : number;
+}
 
-    const count = 13;
-    const score = 3.5;
+function MovieScore({score, count} : Props) {
+
+    
 
 
     return (
         <div className="dsmovie-score-container">
             <p className="dsmovie-score-value">{score > 0 ? score.toFixed(1) : '-'}</p>
-            <MovieStars />
+            <MovieStars score={score} />
             <p className="dsmovie-score-count">{count} avaliações</p>
         </div>
 
