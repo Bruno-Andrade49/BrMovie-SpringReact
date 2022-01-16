@@ -6,8 +6,10 @@ function NavBar() {
         <header>
           <nav className="container">
             <div className="dsMovie-nav-content">
-              <h1>RateBBMovies</h1>
-              <a href="https://github.com/Bruno-Andrade49" target="_blank"> 
+            <a href="/" className="Initial">
+              <h1>DSMovies</h1>
+            </a>
+              <a href="https://github.com/Bruno-Andrade49" target="_blank" className="github-link"> 
                 <div className="link-gitHub">
                   <GitHubIcon/>
                   <p> /brunoAndrade </p>
