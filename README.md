@@ -89,6 +89,10 @@ banco até a página.</h4>
 </a> 
 </h4>
 
+<h4 align="center"> 
+	✅ Heroku Status 🚀 Published ✅
+</h4>
+
 ## Autor
 
 <h4> By me ✅😁</h4>
