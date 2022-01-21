@@ -95,7 +95,7 @@ banco até a página.</h4>
 
 ## Autor
 
-<h4> By me ✅😁</h4>
+<h4>By me ✅😁</h4>
 
 
 
